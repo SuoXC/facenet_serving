@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  tensorflow-serving:
+    image: bitnami/tensorflow-serving:latest
+    ports:
+      - 9000:9000
+    volumes:
+      - ./facenet:/bitnami
